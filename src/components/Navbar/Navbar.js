@@ -1,45 +1,13 @@
 import React from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-import Drawer from '@mui/material/Drawer';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import { mainNavbarItems } from './consts/listItems';
-import { navbarStyles } from '../../styles';
-import { useNavigate } from 'react-router-dom';
-
-const drawerWidth = 200;
+import BigNavbar from './NavabarVariants/BigNavbar';
+import SmallNavbar from './NavabarVariants/SmallNavbar';
 
 const Navbar = () => {
-	const navigate = useNavigate();
+	const isBig = useMediaQuery('(min-width:1300px)');
 
-	return (
-		<Drawer sx={navbarStyles.drawer} variant='permanent' anchor='left'>
-			{/* LOGO HERE */}
-			<Toolbar />
-			{/* LOGO HERE */}
-			<Divider />
-			<List>
-				{mainNavbarItems.map((item, index) => (
-					<div>
-						<ListItem button key={item.id} onClick={()=>navigate(item.route)}>
-							<ListItemButton>
-								<ListItemIcon sx={navbarStyles.icons}>
-									{item.icon}
-								</ListItemIcon>
-								<ListItemText primary={item.label} />
-							</ListItemButton>
-						</ListItem>
-					</div>
-				))}
-			</List>
-			<Divider />
-		</Drawer>
-	);
+	return <div>{isBig ? <BigNavbar /> : <SmallNavbar />}</div>;
 };
 
 export default Navbar;

@@ -1,13 +1,58 @@
-Elements : 
-Background #0f0e17
-Headline #fffffe
-Paragraph #a7a9be
-Button #ff8906
-Button Text #fffffe
+#1 Section
+  Elements : 
+    Background #242629
+    Headline #fffffe
+    Paragraph #94a1b2
+    Button #7f5af0
+    Button Text #fffffe
+  Illustrations: 
+    Stroke: #010101
+    Main : #fffffe
+    Highlight: #7f5af0
+    Secondary:#72757e
+    Tertiary: #2cb67d
 
-Illustrations: 
-Stroke: black
-Main : #fffffe
-Highlight: #ff8906
-Secondary: #f25f4c
-Tertiary: #e53170
+#2 Section
+  Elements:
+    Background #242629
+    Headline #fffffe
+    Sub Headline #94a1b2
+    Card Background #16161a
+    Card heading #fffffe
+    Card Paragraph #94a1b2
+  Icons: 
+    Stroke #010101
+    Main #fffffe
+    Highlight #7f5af0
+    Secondary #72757e
+    Tertiary #2cb67d
+
+#3 Section 
+  Elements:
+    Background #16161a
+    Headline #fffffe
+    Paragraph #94a1b2
+    Card Background #242629
+    Card heading #fffffe
+    Card Paragraph #94a1b2
+    Card tag Background #7f5af0
+    Card tag Text #fffffe
+    Card Highlight #fffffe
+
+#4 Section 
+  Elements:
+    Background #242629
+    Headline #fffffe
+    Paragraph #94a1b2
+    Link #7f5af0
+    Card Background #16161a
+    Card heading #fffffe
+    Card Paragraph #94a1b2
+
+  Newsletter: 
+    Background #fffffe
+    Form input #16161a
+    Label & Placeholders #fffffe
+    Form button #7f5af0
+    Form button text #fffffe
+
