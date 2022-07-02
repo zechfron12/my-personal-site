@@ -9,7 +9,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Link from '@mui/material/Link';
 import { useNavigate } from 'react-router-dom';
-import { styled, useTheme } from '@mui/material/styles';
 
 import { mainNavbarItems } from '../consts/listItems';
 import { navbarStyles } from '../../../styles';
@@ -18,7 +17,6 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseIcon from '@mui/icons-material/Close';
 
 const SmallNavbar = () => {
-	const theme = useTheme();
 	const navigate = useNavigate();
 
 	const [open, setOpen] = useState(false);
