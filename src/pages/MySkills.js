@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MySkills = () => {
-	return <div>MySkills</div>;
+	return <div style={{ background: 'white' }}>MySkills</div>;
 };
 
 export default MySkills;

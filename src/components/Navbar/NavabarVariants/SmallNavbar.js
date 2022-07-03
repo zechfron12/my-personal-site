@@ -5,16 +5,16 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+import { Typography } from '@mui/material';
 import Link from '@mui/material/Link';
 import { useNavigate } from 'react-router-dom';
-
 import { mainNavbarItems } from '../consts/listItems';
 import { navbarStyles } from '../../../styles';
-
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseIcon from '@mui/icons-material/Close';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const SmallNavbar = () => {
 	const navigate = useNavigate();
@@ -79,23 +79,52 @@ const SmallNavbar = () => {
 							<ListItem
 								button
 								key={item.id}
-								disablePadding
 								onClick={() => navigate(item.route)}
+								disablePadding
 							>
-								<ListItemButton>
-									<ListItemIcon sx={navbarStyles.icons}>
-										{item.icon}
-									</ListItemIcon>
-									<ListItemText
-										primary={item.label}
-										sx={{ display: 'inline' }}
-									/>
+								<ListItemButton
+									sx={{
+										display: 'flex',
+										flexDirection: 'column',
+										justifyContent: 'center',
+									}}
+								>
+									{item.icon}
+									<Typography>{item.label}</Typography>
 								</ListItemButton>
 							</ListItem>
 						</div>
 					))}
 				</List>
-				<div></div>
+				<div
+					style={{
+						display: 'flex',
+						justifyContent: 'center',
+						marginBottom: '50px',
+					}}
+				>
+					<a
+						target='_blank'
+						rel='noreferrer'
+						href='https://www.linkedin.com/in/radu-chelaru'
+					>
+						<LinkedInIcon sx={navbarStyles.icons} />
+					</a>
+					<a
+						target='_blank'
+						rel='noreferrer'
+						href='https://github.com/zechfron12'
+					>
+						<GitHubIcon sx={navbarStyles.icons} />
+					</a>
+					<a
+						target='_blank'
+						rel='noreferrer'
+						href='https://www.facebook.com/radu.chelaru.14'
+					>
+						<FacebookIcon sx={navbarStyles.icons} />
+					</a>
+				</div>
 			</Drawer>
 		</div>
 	);

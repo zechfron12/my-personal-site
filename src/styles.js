@@ -5,12 +5,15 @@ export const navbarStyles = {
 			boxSizing: 'border-box',
 			backgroundColor: '#242629',
 			color: '#fffffe',
+			width: 1 / 12,
+			display: 'flex',
+			justifyContent: 'space-between',
+			overflow: 'hidden',
 		},
-		display: 'flex',
-		justifyContent: 'space-between',
 	},
 	icons: {
 		color: '#7f5af0',
+		margin: '5px',
 	},
 	text: {
 		color: '##fffffe',
@@ -30,6 +33,8 @@ export const navbarStyles = {
 		'& .MuiDrawer-paper': {
 			width: '100vw',
 			boxSizing: 'border-box',
+			display: 'flex',
+			justifyContent: 'space-between',
 		},
 	},
 };
