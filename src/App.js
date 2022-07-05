@@ -4,7 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 
 import { themeOptions } from './mainTheme';
 import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 import About from './pages/Contact';
 import Contact from './pages/Contact';
 import MySkills from './pages/MySkills';

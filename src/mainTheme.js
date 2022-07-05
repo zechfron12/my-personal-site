@@ -27,6 +27,6 @@ export const themeOptions = createTheme({
 		},
 	},
 	typography: {
-		fontFamily: 'Open Sans',
+		fontFamily: 'Raleway',
 	},
 });

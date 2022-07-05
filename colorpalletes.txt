@@ -1,6 +1,6 @@
 #1 Section
   Elements : 
-    Background #242629
+    Background #16161a
     Headline #fffffe
     Paragraph #94a1b2
     Button #7f5af0
