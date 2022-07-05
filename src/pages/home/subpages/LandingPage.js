@@ -3,7 +3,6 @@ import { Typography } from '@mui/material';
 import { subpageStyles, titleStyles, arrowStyle } from '../../../styles';
 import { keyframes, styled } from '@mui/material/styles';
 import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
-import SmallNavbar from '../../../components/Navbar/NavabarVariants/SmallNavbar';
 
 const downAnimation = keyframes`
 	0% {
