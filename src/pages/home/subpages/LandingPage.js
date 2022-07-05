@@ -44,7 +44,7 @@ const LandingPage = () => {
 				variant='h4'
 				sx={{ ...titleStyles.subTitle, margin: '4rem 0' }}
 			>
-				Front End Developer
+				Student &amp; Front End Developer
 			</Typography>
 			<div
 				style={{
